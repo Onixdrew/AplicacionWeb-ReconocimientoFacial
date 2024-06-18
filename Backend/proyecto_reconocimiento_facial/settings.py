@@ -82,9 +82,9 @@ WSGI_APPLICATION = 'proyecto_reconocimiento_facial.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'db_reconocimiento_facial',        
+        'NAME': 'db_senauthenticator',        
         'CLIENT': {
-            'host': 'mongodb+srv://Paladinez:Xy12345@cluster0.vhvbcg7.mongodb.net/db_reconocimiento_facial?retryWrites=true&w=majority&appName=Cluster0'
+            'host': 'mongodb+srv://adso:2669742@cluster0.vhvbcg7.mongodb.net/db_senauthenticator?retryWrites=true&w=majority&appName=Cluster0'
         },        
     }
 }

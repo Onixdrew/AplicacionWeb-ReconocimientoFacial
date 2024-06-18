@@ -10,7 +10,6 @@ export default function FormUsuario() {
 
   // Función onSubmit para controlar el envío del formulario
   const onSubmit = handleSubmit(async (data) => {
-
     if (params.id) {
       try {
         await actualizarUsuario(params.id, data);

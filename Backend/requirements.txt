@@ -13,11 +13,12 @@ idna==3.7
 itypes==1.2.0
 Jinja2==3.1.4
 MarkupSafe==2.1.5
+pillow==10.3.0
 pymongo==3.12.3
 pytz==2024.1
 requests==2.31.0
-setuptools==69.5.1
 sqlparse==0.2.4
+typing_extensions==4.12.2
 tzdata==2024.1
 uritemplate==4.1.1
 urllib3==2.2.1
