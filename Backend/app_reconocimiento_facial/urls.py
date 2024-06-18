@@ -5,7 +5,7 @@ from app_reconocimiento_facial import views
 
 router_usuario = routers.DefaultRouter()
 router_usuario.register(r'usuario', views.UsuarioView, 'usuario') 
-router_usuario.register(r'aprendiz', views.aprendizView, 'aprendiz') 
+router_usuario.register(r'aprendiz', views.AprendizView, 'aprendiz') 
 
 urlpatterns = [
     path('v1/', include(router_usuario.urls)),

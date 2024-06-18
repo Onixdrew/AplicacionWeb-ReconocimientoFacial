@@ -19,3 +19,15 @@ class Ficha(models.Model):
 
     def __str__(self) -> str:
         return self.numero_ficha
+    
+    
+class Aprendiz(models.Model):
+    nombres = models.CharField(max_length=30)
+    apellidos = models.CharField(max_length=30)
+    numero_documento = models.CharField(max_length=20, unique=True)
+    correo_electronico = models.CharField(max_length=50, unique=True)
+    genero = models.CharField(max_length=9)
+    foto=models.CharField(max_length=150)
+
+    def __str__(self) -> str:
+        return self.nombres

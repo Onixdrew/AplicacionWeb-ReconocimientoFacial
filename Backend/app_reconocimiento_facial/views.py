@@ -1,6 +1,6 @@
 from rest_framework import viewsets
-from .serializer import UsuarioSerializer, FichaSerializer
-from .models import Usuario, Ficha
+from .serializer import UsuarioSerializer, FichaSerializer, AprendizSerializer
+from .models import Usuario, Ficha, Aprendiz
 
 # Create your views here.
 class UsuarioView(viewsets.ModelViewSet):
@@ -12,7 +12,7 @@ class FichaView(viewsets.ModelViewSet):
     queryset = Ficha.objects.all()
     
     
-class aprendizView(viewsets.ModelViewSet):
-    serializer_class = FichaSerializer
-    queryset = Ficha.objects.all()
+class AprendizView(viewsets.ModelViewSet):
+    serializer_class = AprendizSerializer
+    queryset = Aprendiz.objects.all()
     
